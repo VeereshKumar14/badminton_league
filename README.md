@@ -5,10 +5,7 @@ It allows users to manage players, record match results with scores, and view a 
 
 ## Demo Video
 
-<video width="600" controls>
-  <source src="./simplescreenrecorder-2025-12-23_17.25.09.mkv" type="video/mkv">
-  Your browser does not support the video tag.
-</video>
+[Demo Video](./simplescreenrecorder-2025-12-23_17.25.09.mkv)
 
 
 
