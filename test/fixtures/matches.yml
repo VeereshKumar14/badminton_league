@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  winner: one
+  loser: one
+  winner_score: 1
+  loser_score: 1
+
+two:
+  winner: two
+  loser: two
+  winner_score: 1
+  loser_score: 1
