@@ -3,6 +3,11 @@
 A simple Ruby on Rails web application to manage a badminton league.
 It allows users to manage players, record match results with scores, and view a leaderboard ranked by wins.
 
+## Demo Video
+
+[Demo Video](./simplescreenrecorder-2025-12-23_17.25.09.mkv)
+
+
 ## Features
 ### Core Features
 
