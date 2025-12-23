@@ -1,0 +1,30 @@
+<h1>Record Match</h1>
+
+<%= form_with model: @match do |f| %>
+
+  <% if @match.errors.any? %>
+    <div class="flash alert">
+      <h3><%= pluralize(@match.errors.count, "error") %> prevented this match from being saved:</h3>
+      <ul>
+        <% @match.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <%= f.label :winner_id, "Winner" %>
+  <%= f.collection_select :winner_id, @players, :id, :name, prompt: "Select Winner" %>
+
+  <%= f.label :winner_score, "Winner Score" %>
+  <%= f.number_field :winner_score, min: 0 %>
+
+  <%= f.label :loser_id, "Loser" %>
+  <%= f.collection_select :loser_id, @players, :id, :name, prompt: "Select Loser" %>
+
+  <%= f.label :loser_score, "Loser Score" %>
+  <%= f.number_field :loser_score, min: 0 %>
+
+  <%= f.submit "Save Match" %>
+<% end %>

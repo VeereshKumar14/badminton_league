@@ -1,0 +1,21 @@
+<h1>Add Player</h1>
+
+<%= form_with model: @player do |f| %>
+
+  <% if @player.errors.any? %>
+    <div class="flash alert">
+      <h3><%= pluralize(@player.errors.count, "error") %> prevented this player from being saved:</h3>
+      <ul>
+        <% @player.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true %>
+  <%= f.label :email %>
+  <%= f.text_field :email, required: true %>
+
+  <%= f.submit "Create Player" %>
+<% end %>
